@@ -1,0 +1,308 @@
+
+/* HISTORY SEARCH */
+@keyframes hill
+{
+    from
+    {
+        transform: scale(1,0);
+    }
+    to
+    {
+        transform: scale(1,1);
+    }
+}
+@keyframes bigsmall
+{
+    from
+    {
+        transform: scale(1);
+    }
+    to
+    {
+        transform: scale(0);
+    }
+}
+/* CLEAR SHOPPING CART*/
+@keyframes shopping_cart {
+    from
+    {
+        opacity: 0;
+        transform: scale(0,1);
+    }
+    to
+    {
+        opacity: 1;
+        transform: scale(1,1);
+    }
+}
+/*WATER */
+@keyframes water {
+    from
+    {
+        transform: scale(0,1);
+    }
+    to
+    {
+        transform: scale(1,1);
+    }
+}
+/* SCAN CODE */
+@keyframes maqr
+{
+    from
+    {
+        opacity: 0;
+    }
+    to
+    {
+        opacity: 1;
+    }
+}
+/* ANNOUNCEMENT   :   THÔNG BÁO*/
+@keyframes orgin1 {
+    from
+    {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to
+    {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+/* ĐĂNG KÝ */
+@keyframes growth_form
+{
+    from
+    {
+        opacity: 0;
+        transform: scale(.6);
+    }
+    to
+    {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+/* REPOSIVE */
+/* MOBILE */
+@media (max-width:730px)
+{   
+    .btn_search
+    {
+        color: black;
+        background: transparent;
+    }
+   
+    .grid
+    {
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: block;
+    }
+    .grid_column2 {
+        width: calc((5 / 10) * 100%);
+    }
+    .open_menu_login_mobile:checked ~.menulogin
+    {
+        transform: translateX(-3.4%);
+        opacity: 1;
+    }
+    .grid_row
+    {
+        margin: 0;
+        justify-content: center;
+    }
+    .list_number
+    {
+        margin: 0;
+    }
+    .footer .grid_column2
+    {
+        text-align: center;
+    }
+    .footer_item
+    {
+        justify-content: center;
+        text-align: center;
+    }
+    .category,
+    .shopping_icon
+    {
+        padding: 0 8px;
+    }
+    .logo_shope,
+    .shopping_icon
+    {
+        display: block;
+        width: unset;
+    }
+    .category
+    {
+        align-items: center;
+    }
+    .checkmodel
+    {
+        display: block;
+    }
+    .grid .container_with_search
+    {
+        justify-content: space-between;
+    }
+    
+    .price 
+    {
+        margin-left: 9px;
+    }
+    .input_search
+    {
+        position: fixed;
+        top: calc(60px);
+        left: 0;
+        z-index: 10;
+        font-size: 1rem;
+        right: 0;
+        transform: translateY(-100px);
+        transition: all ease-in-out .4s;
+        visibility: hidden;
+        opacity: 0;
+    }
+    #oki:checked ~ .input_search
+    {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+    #tim
+    {
+        font-size: 1rem;
+    }
+    .nuoc>li>span
+    {
+        padding: 11px 22px;
+    }
+    .search_history
+    {
+        top: 100%;
+        width: 100%;
+    }
+}
+/* TABLET */
+@media (min-width:740px) and (max-width:1023px) {
+    .menulogin
+    {
+        transform: translateX(-127%);
+    }
+        .open_menu_login_mobile:checked ~.menulogin
+    {
+        transform: translateX(-27%);
+        opacity: 1;
+    }
+    .check_search
+    {
+        display: none;
+    }
+    .grid_row
+    {
+        margin: auto -10px;
+    }
+    .grid
+    {
+        width: 640px;
+        
+    }
+    .grid_column2 {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: calc((4 / 12) * 100%);
+    }
+    .shopping_icon
+    {
+        width: 80px;
+    }
+    .shopping_icon .giohang
+    {
+        font-size: 22px;
+    }
+    .has_cart .cart_number
+    {
+        padding: 0 4px;
+        left: calc(60% - 8px);
+    }
+    .logo_shope
+    {
+        display: none;
+    }
+    
+    .price
+    {
+        margin-left: 20px;
+    }
+  
+}
+/* MOBILE AND TABLET */
+@media (max-width:1023px) {
+    .icon_menu
+    {
+        font-size: 2rem;
+    }
+    .home_product_item_sale_off
+    {
+    }
+    .category
+    {
+        display: flex;
+    }
+ 
+    .anthe  
+    {
+        display: none;
+    }
+    .grid .container_with_search
+    {
+        height: 60px;
+    }
+    .header
+    {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        height: 60px;
+    }
+    .container
+    {
+        padding-top: 90px;
+    }
+    .product_gruop
+    {
+        display: none;
+    }
+    .page_item_container
+    {
+        display: block;
+    }
+    .cart
+    {
+        position: fixed;
+        top: 60px;
+        right: 0;
+        left: 0;
+        width: 100%;
+        padding: 0 calc((100% - 640px)/2);  
+    }
+    .container_product
+    {
+        max-height:46vh ;
+    }
+    .shopping_icon .cart::after
+    {
+        display: none;
+    }
+   
+    
+}
+

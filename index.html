@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="shope.css">
+    <link rel="stylesheet" href="shope_keyframes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Khải</title>
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid" >
+                <nav class="header__navigation anthe">
+                    <ul class="hearder__navlist">
+                        <li>
+                            <a href="">Vào cửa hàng trên ứng dụng F8 Shop</a>
+                            <div class="qr_code">
+                                <img src="qrcode.png" alt="" class="quetmaqr">
+                                <div class="qr_app">
+                                    <a href=""><img src="appgallery.png" alt=""></a>
+                                    <a href=""><img src="googleplay.png" alt=""></a>
+                                    <a href=""><img src="appstore.png" alt=""></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="gach">
+                           <span class="khongcobantay">Kết nối</span>
+                            <a><i class="fab fa-facebook"></i></a>
+                            <a><i class="fab fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                    <!-- classList logged thì sẽ hiện đăng nhập -->
+                    <ul class="nav__khachhang logged">
+                        <li>
+                            <a href="#" class="bell"><i class="far fa-bell"></i> Thông báo</a>
+                            <div class="thongbao">
+                                <header>
+                                    Thông báo mới nhận
+                                </header>
+                                <ul class="newmessage">
+                                    <li class="element">
+                                        <a href="#" class="chuaa">
+                                            <img src="fontsadboiz.png" alt="">
+                                            <div class="contentmessage">
+                                                <p>Nhanh tay săn nhiều sản phẩm vào ngày 8/3 để được nhận nhiều ưu đãi</p>
+                                                <p>Tai nghe bluetooth chất lượng âm thanh 8D,..</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="element">
+                                        <a href="#" class="chuaa">
+                                            <img src="fontsadboiz.png" alt="">
+                                            <div class="contentmessage">
+                                                <p>Nhanh tay săn nhiều sản phẩm vào ngày 8/3 để được nhận nhiều ưu đãi</p>
+                                                <p>Tai nghe bluetooth chất lượng âm thanh 8D,..</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="element">
+                                        <a href="#" class="chuaa">
+                                            <img src="fontsadboiz.png" alt="">
+                                            <div class="contentmessage">
+                                                <p>Nhanh tay săn nhiều sản phẩm vào ngày 8/3 để được nhận nhiều ưu đãi</p>
+                                                <p>Tai nghe bluetooth chất lượng âm thanh 8D,..</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="element">
+                                        <a href="#" class="chuaa">
+                                            <img src="fontsadboiz.png" alt="">
+                                            <div class="contentmessage">
+                                                <p>Nhanh tay săn nhiều sản phẩm vào ngày 8/3 để được nhận nhiều ưu đãi</p>
+                                                <p>Tai nghe bluetooth chất lượng âm thanh 8D,..</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="seeall">
+                                    <a href="#">Xem tất cả</a>
+                                </div>
+                            </div>
+                            <div class="no_messager">
+                                <div class="content_no_messager">
+                                    <img src="nomessager.png" alt=""class="img_no_messger">
+                                    <p class="text_no_messager">Đăng nhập để xem Thông Báo</p>
+                                </div>
+                                <div class="btn_login">
+                                    <button href="#">Đăng ký</button>
+                                    <button href="#">Đăng nhập</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#"><i class="far fa-question-circle"></i> Trợ giúp</a></li>
+                        <li class="dangky"><a href="#" id="dangky">Đăng ký</a></li>
+                        <li class="gach dangnhap"><a href="#" id="dangnhap">Đăng nhập</a></li>
+                        <li class="account">
+                            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwsKDQ0NDQ0NCg4KDg0NDQgIDQ8NDQgOFREWFhURExMYHCggGBolGxMTITEhJSkrLi4uFx8zODMtNygtLisBCgoKDQ0NFQ8NFSsZFRkrLS0rKysrKysrKysrLSsrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAOEA4QMBIgACEQEDEQH/xAAbAAEAAwEBAQEAAAAAAAAAAAAAAQIFBAYDB//EADEQAQABAwEGBAMIAwAAAAAAAAABAgMRBAUSITFBUVJhcYEVM/ATIiMyQpGhwWLR8f/EABYBAQEBAAAAAAAAAAAAAAAAAAABAv/EABYRAQEBAAAAAAAAAAAAAAAAAAARAf/aAAwDAQACEQMRAD8A/RAGkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABIogSAgBAAAAAAAAAAAAAAAAAAAAAAAJkiJmYiOMz0a+i2ZTTiquMz4Z6AzLVi5c/LTPq6qdl3p7R6t2mmI5REeUJmEowp2Te8pfC7oL1HOnPnD0mPcwUeTqzHDGPVL0Gr0Vu7HLE9Jhh6ixVZqxPLpUtHyAAAAAAAAAAAAAAAAAAAABNETVVTT4pgGnsjSRP4lUcuTXmFLNuKKYiOUPphlSEgAACJhz63TxdomMcY5S6VZB5WqjdmY7Id217W5ciY/U4WsQAAAAAAAAAAAAAAAAAAdOzqN+7H+PFzOzY/C97IPQQlEJRQAAABCUSDM23Tmime0saG/tb5M+UsCOUS1iAAAAAAAAAAAAAAAAAADs2TOL0ejjX09zcrpnzjMor1KVKKsxE91oQSAAAACJkGftmv8LHimMMOOTS21ciqqmmP09Wa1iAAAAAAAAAAAAAAAAAACMJAbmydTv07sz96OjQh5azcm3VFcZ4dO8PQ6TVU3qcxz609k1XSK7ycoJBEyA+d+5FETVPRauqIjM8IhhbR1n2s4p4RH8rmDkvVzcqqqzzngrCIjCVQAAAAAAAAAAAAAAAAAAEoAWt3a7cxVTOJ7dJVJgGxptrU1cK/uz36S7qNTaq5V0z7w8zukx9QRXqJv2/FT+8ObUbStW+UxVPaJywOP8A3Jj0n0hIOrV665e5Tu09nLEYBcABdQEoQAAAAAAAAAAAAAACZwmmJqnEcZlpaTZWeN3j2pjoDOt0VVzimmZ8+jstbLu1c8Uw2rdqmiIimIjHZaUqsuNjd6/2WjY1Hiq9mpCSjL+D2/FUfB6PHW1Aoy/g9vxVnwe34qmoFGX8Ho8dXupVsaOlc+7XCjDr2RXH5as+Tku6S7b50584elRMZ58fKSjyv1gbup2dbucYjdlj6jT12qsVRiOkqPkAIAAAAAAAAAALUUTVMRHHP8K/22Nk6SKY36ozM8jR9tBoYsxmeNU9ezthaEZZVIjMGYBIggEiJASCJBIiEgIkzBmAJfHUWKLsbtUe/Z9kT9SDzes0tVmrvE8qnwem1Nim5TNM9uEvOXrU26ppnpPBcFAFQAAAAAASgB99FZ+1rpjtL0URFMREdGbsSzimqrv/AA0pTVTkzCEILZgzCoC2TKqQTkygBOTKAE5MoQC2YMwqAtkyqAtEszbOnzEVx0aT56qjfoqp7wDzeEHLh2mRpAAAAAABEpJ/oG7s2N21Hm6sufRT+HR6Q+wLZTlQBfJlU4AtlGUcAE5TlQBbKcqwgFsmVQFsmVQFsmVQF8oyomAef1VO7cqjzfJ0a/5tfrDnAAAAAAARVySA3tF8uj0h9cuXZl7eo3e3B1AnKMgBkyAGU5QAnKMgCcmUAJyZQAnJlACcoyAGUxKFaqopjM9AYuv+bX6w+C16verqnvKoAAAAAAAANLZPP3logAAAAAAAAAAAAAAAAA+Wp/JIAwf9yAAAAAD/2Q==" alt="">
+                            <i class="fa-solid fa-sort-down icon_account"></i>
+                            <div class="container_information">
+                                <div class="account_name">
+                                    <h4>Lê Triệu Khải</h4>
+                                </div>
+                                <ul class="information_list">
+                                    <li class="information_item">
+                                        <a href="https://www.facebook.com/profile.php?id=100030509922563" target="_blank" class="information_link">Thông tin tài khoản</a>
+                                    </li>
+                                    <li class="information_item">
+                                        <a href="##" class="information_link">Vỏ hàng của tôi</a>
+                                    </li>
+                                    <li class="information_item">
+                                        <a href="##" class="information_link">Lịch sử mua hàng</a>
+                                    </li>
+                                    <li class="information_item">
+                                        <a href="##" class="information_link">Đăng xuất</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="container_with_search">
+                    <div class="category">
+                        <label for="open_menu_login"  class="checkmodel">
+                            <i class="fas fa-bars icon_menu"></i>
+                        </label>
+                        <input type="checkbox" name="" id="open_menu_login" class="open_menu_login_mobile">
+                        <label for="open_menu_login" class="shadow_menu"></label>
+                        <div class="menulogin">
+                            <label for="open_menu_login" class="close_menu"><i class="nav__mobile-close-icon fas fa-times"></i></label>
+                            <ul class="menulogin_list">
+                                <li class="menulogin_item taikhoan">
+                                    <a href="#" class="menulogin_link">
+                                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwsKDQ0NDQ0NCg4KDg0NDQgIDQ8NDQgOFREWFhURExMYHCggGBolGxMTITEhJSkrLi4uFx8zODMtNygtLisBCgoKDQ0NFQ8NFSsZFRkrLS0rKysrKysrKysrLSsrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAOEA4QMBIgACEQEDEQH/xAAbAAEAAwEBAQEAAAAAAAAAAAAAAQIFBAYDB//EADEQAQABAwEGBAMIAwAAAAAAAAABAgMRBAUSITFBUVJhcYEVM/ATIiMyQpGhwWLR8f/EABYBAQEBAAAAAAAAAAAAAAAAAAABAv/EABYRAQEBAAAAAAAAAAAAAAAAAAARAf/aAAwDAQACEQMRAD8A/RAGkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABIogSAgBAAAAAAAAAAAAAAAAAAAAAAAJkiJmYiOMz0a+i2ZTTiquMz4Z6AzLVi5c/LTPq6qdl3p7R6t2mmI5REeUJmEowp2Te8pfC7oL1HOnPnD0mPcwUeTqzHDGPVL0Gr0Vu7HLE9Jhh6ixVZqxPLpUtHyAAAAAAAAAAAAAAAAAAAABNETVVTT4pgGnsjSRP4lUcuTXmFLNuKKYiOUPphlSEgAACJhz63TxdomMcY5S6VZB5WqjdmY7Id217W5ciY/U4WsQAAAAAAAAAAAAAAAAAAdOzqN+7H+PFzOzY/C97IPQQlEJRQAAABCUSDM23Tmime0saG/tb5M+UsCOUS1iAAAAAAAAAAAAAAAAAADs2TOL0ejjX09zcrpnzjMor1KVKKsxE91oQSAAAACJkGftmv8LHimMMOOTS21ciqqmmP09Wa1iAAAAAAAAAAAAAAAAAACMJAbmydTv07sz96OjQh5azcm3VFcZ4dO8PQ6TVU3qcxz609k1XSK7ycoJBEyA+d+5FETVPRauqIjM8IhhbR1n2s4p4RH8rmDkvVzcqqqzzngrCIjCVQAAAAAAAAAAAAAAAAAAEoAWt3a7cxVTOJ7dJVJgGxptrU1cK/uz36S7qNTaq5V0z7w8zukx9QRXqJv2/FT+8ObUbStW+UxVPaJywOP8A3Jj0n0hIOrV665e5Tu09nLEYBcABdQEoQAAAAAAAAAAAAAACZwmmJqnEcZlpaTZWeN3j2pjoDOt0VVzimmZ8+jstbLu1c8Uw2rdqmiIimIjHZaUqsuNjd6/2WjY1Hiq9mpCSjL+D2/FUfB6PHW1Aoy/g9vxVnwe34qmoFGX8Ho8dXupVsaOlc+7XCjDr2RXH5as+Tku6S7b50584elRMZ58fKSjyv1gbup2dbucYjdlj6jT12qsVRiOkqPkAIAAAAAAAAAALUUTVMRHHP8K/22Nk6SKY36ozM8jR9tBoYsxmeNU9ezthaEZZVIjMGYBIggEiJASCJBIiEgIkzBmAJfHUWKLsbtUe/Z9kT9SDzes0tVmrvE8qnwem1Nim5TNM9uEvOXrU26ppnpPBcFAFQAAAAAASgB99FZ+1rpjtL0URFMREdGbsSzimqrv/AA0pTVTkzCEILZgzCoC2TKqQTkygBOTKAE5MoQC2YMwqAtkyqAtEszbOnzEVx0aT56qjfoqp7wDzeEHLh2mRpAAAAAABEpJ/oG7s2N21Hm6sufRT+HR6Q+wLZTlQBfJlU4AtlGUcAE5TlQBbKcqwgFsmVQFsmVQFsmVQF8oyomAef1VO7cqjzfJ0a/5tfrDnAAAAAAARVySA3tF8uj0h9cuXZl7eo3e3B1AnKMgBkyAGU5QAnKMgCcmUAJyZQAnJlACcoyAGUxKFaqopjM9AYuv+bX6w+C16verqnvKoAAAAAAAANLZPP3logAAAAAAAAAAAAAAAAA+Wp/JIAwf9yAAAAAD/2Q==" alt="" class="img_link">
+                                        <span class="name_acount">Khải</span>
+                                    </a>
+                                </li>
+                                <li class="menulogin_item">
+                                    <a href="#" class="menulogin_link">Thông báo</a>
+                                </li>
+                                <li class="menulogin_item">
+                                    <a href="#" class="menulogin_link">Hóa đơn đã mua</a>
+                                </li>
+                                <li class="menulogin_item">
+                                    <a href="#" class="menulogin_link">Hàng hóa đã thích</a>
+                                </li>
+                                <li class="menulogin_item">
+                                    <a href="#" class="menulogin_link out">Đăng xuất</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <label for="oki" class="checkmodel check_search">
+                            <i class="fa-solid fa-magnifying-glass icon_search"></i>
+                        </label>
+                    </div>
+                    <div class="logo_shope">
+                        <a href=""><i class="fa-solid fa-bag-shopping"></i> Shopee</a>
+                    </div>
+                    <input type="checkbox" id="oki">
+                    <div class="input_search">
+                        <div class="container_input_search">
+                            <input type="text" placeholder="Nhập  để tìm sản phẩm" id="tim">
+                            <div class="search_history">
+                                <h3>Lịch sử tìm kiếm</h3>
+                                <ul class="history">
+                                    <li class="search_suggertions"><a href="#">Áo font rộng cho nam, nữ</a></li>
+                                    <li class="search_suggertions"><a href="#">Áo font rộng cho nam, nữ</a></li>
+                                    <li class="search_suggertions"><a href="#">Áo font rộng cho nam, nữ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="hello">
+                            <span class="in_the_store">Trong nước</span>
+                            <i class="fa-solid fa-angle-down"></i>
+                            <ul class="nuoc">
+                                <li class="trong"><span class="in_water">Trong nước</span><i class="fa-solid fa-check"></i></li>
+                                <li class="ngoai"><span class="foreign">Ngoài nước</span><i class="fa-solid fa-check"></i></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <button  class="btn_seacrh">
+                                <span><i class="fas fa-search"></i></span>
+                            </button>   
+                        </div>                     
+                    </div>
+                    <!-- ADD classList has_cart thì sẽ hiện giỏ hàng và number hàng -->
+                    <div class="shopping_icon has_cart">
+                        <a href="#" class="giohang"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <span class="cart_number">23</span>
+                        <div class="cart  ">
+                            <img src="vohangrong.png" alt="" class="img_clear_shopping">
+                            <h2 class="clear_shopping_text">Chưa có sản phẩm</h2>
+                            <h4 class="text_add_cart">Sản phẩm đã thêm</h4>
+                            <ul class="container_product">
+                                <li class="cart_item">
+                                    <img src="fontsadboiz.png" alt="">
+                                    <div class="text_product">
+                                        <div class="textsanpham">
+                                             <p class="product_name">Áo thun sad boiz sadtagram tee logo nam nữ áo thun tay lỡ sadboiz sadtagram full tag</p>
+                                             <div class="price">
+                                                <span class="price_text">200.000</span>
+                                                <span class="multily">x</span>
+                                                <span class="amount">2</span>
+                                             </div>
+                                        </div>
+                                        <div class="phanloai">
+                                            <span>Phân loại: Vãi</span>
+                                            <a href="">Xóa</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cart_item">
+                                    <img src="fontsadboiz.png" alt="">
+                                    <div class="text_product">
+                                        <div class="textsanpham">
+                                             <p class="product_name">Áo thun sad boiz sadtagram tee logo nam nữ áo thun tay lỡ sadboiz sadtagram full tag</p>
+                                             <div class="price">
+                                                <span class="price_text">200.000</span>
+                                                <span class="multily">x</span>
+                                                <span class="amount">2</span>
+                                             </div>
+                                        </div>
+                                        <div class="phanloai">
+                                            <span>Phân loại: Vãi</span>
+                                            <a href="">Xóa</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cart_item">
+                                    <img src="fontsadboiz.png" alt="">
+                                    <div class="text_product">
+                                        <div class="textsanpham">
+                                             <p class="product_name">Áo thun sad boiz sadtagram tee logo nam nữ áo thun tay lỡ sadboiz sadtagram full tag</p>
+                                             <div class="price">
+                                                <span class="price_text">200.000</span>
+                                                <span class="multily">x</span>
+                                                <span class="amount">2</span>
+                                             </div>
+                                        </div>
+                                        <div class="phanloai">
+                                            <span>Phân loại: Vãi</span>
+                                            <a href="">Xóa</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cart_item">
+                                    <img src="fontsadboiz.png" alt="">
+                                    <div class="text_product">
+                                        <div class="textsanpham">
+                                             <p class="product_name">Áo thun sad boiz sadtagram tee logo nam nữ áo thun tay lỡ sadboiz sadtagram full tag</p>
+                                             <div class="price">
+                                                <span class="price_text">200.000</span>
+                                                <span class="multily">x</span>
+                                                <span class="amount">2</span>
+                                             </div>
+                                        </div>
+                                        <div class="phanloai">
+                                            <span>Phân loại: Vãi</span>
+                                            <a href="">Xóa</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cart_item">
+                                    <img src="fontsadboiz.png" alt="">
+                                    <div class="text_product">
+                                        <div class="textsanpham">
+                                             <p class="product_name">Áo thun sad boiz sadtagram tee logo nam nữ áo thun tay lỡ sadboiz sadtagram full tag</p>
+                                             <div class="price">
+                                                <span class="price_text">200.000</span>
+                                                <span class="multily">x</span>
+                                                <span class="amount">2</span>
+                                             </div>
+                                        </div>
+                                        <div class="phanloai">
+                                            <span>Phân loại: Vãi</span>
+                                            <a href="">Xóa</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cart_item">
+                                    <img src="fontsadboiz.png" alt="">
+                                    <div class="text_product">
+                                        <div class="textsanpham">
+                                             <p class="product_name">Áo thun sad boiz sadtagram tee logo nam nữ áo thun tay lỡ sadboiz sadtagram full tag</p>
+                                             <div class="price">
+                                                <span class="price_text">200.000</span>
+                                                <span class="multily">x</span>
+                                                <span class="amount">2</span>
+                                             </div>
+                                        </div>
+                                        <div class="phanloai">
+                                            <span>Phân loại: Vãi</span>
+                                            <a href="">Xóa</a>
+                                        </div>
+                                    </div>
+                                </li> 
+                                <li class="cart_item">
+                                    <img src="fontsadboiz.png" alt="">
+                                    <div class="text_product">
+                                        <div class="textsanpham">
+                                             <p class="product_name">Áo thun sad boiz sadtagram tee logo nam nữ áo thun tay lỡ sadboiz sadtagram full tag</p>
+                                             <div class="price">
+                                                <span class="price_text">200.000</span>
+                                                <span class="multily">x</span>
+                                                <span class="amount">2</span>
+                                             </div>
+                                        </div>
+                                        <div class="phanloai">
+                                            <span>Phân loại: Vãi</span>
+                                            <a href="">Xóa</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cart_item">
+                                    <img src="fontsadboiz.png" alt="">
+                                    <div class="text_product">
+                                        <div class="textsanpham">
+                                             <p class="product_name">Áo thun sad boiz sadtagram tee logo nam nữ áo thun tay lỡ sadboiz sadtagram full tag</p>
+                                             <div class="price">
+                                                <span class="price_text">200.000</span>
+                                                <span class="multily">x</span>
+                                                <span class="amount">2</span>
+                                             </div>
+                                        </div>
+                                        <div class="phanloai">
+                                            <span>Phân loại: Vãi</span>
+                                            <a href="">Xóa</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cart_item">
+                                    <img src="fontsadboiz.png" alt="">
+                                    <div class="text_product">
+                                        <div class="textsanpham">
+                                             <p class="product_name">Áo thun sad boiz sadtagram tee logo nam nữ áo thun tay lỡ sadboiz sadtagram full tag</p>
+                                             <div class="price">
+                                                <span class="price_text">200.000</span>
+                                                <span class="multily">x</span>
+                                                <span class="amount">2</span>
+                                             </div>
+                                        </div>
+                                        <div class="phanloai">
+                                            <span>Phân loại: Vãi</span>
+                                            <a href="">Xóa</a>
+                                        </div>
+                                    </div>
+                                </li> 
+                                <li class="cart_item">
+                                    <img src="fontsadboiz.png" alt="">
+                                    <div class="text_product">
+                                        <div class="textsanpham">
+                                             <p class="product_name">Áo thun sad boiz sadtagram tee logo nam nữ áo thun tay lỡ sadboiz sadtagram full tag</p>
+                                             <div class="price">
+                                                <span class="price_text">200.000</span>
+                                                <span class="multily">x</span>
+                                                <span class="amount">2</span>
+                                             </div>
+                                        </div>
+                                        <div class="phanloai">
+                                            <span>Phân loại: Vãi</span>
+                                            <a href="">Xóa</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cart_item">
+                                    <img src="fontsadboiz.png" alt="">
+                                    <div class="text_product">
+                                        <div class="textsanpham">
+                                             <p class="product_name">Áo thun sad boiz sadtagram tee logo nam nữ áo thun tay lỡ sadboiz sadtagram full tag</p>
+                                             <div class="price">
+                                                <span class="price_text">200.000</span>
+                                                <span class="multily">x</span>
+                                                <span class="amount">2</span>
+                                             </div>
+                                        </div>
+                                        <div class="phanloai">
+                                            <span>Phân loại: Vãi</span>
+                                            <a href="">Xóa</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cart_item">
+                                    <img src="fontsadboiz.png" alt="">
+                                    <div class="text_product">
+                                        <div class="textsanpham">
+                                             <p class="product_name">Áo thun sad boiz sadtagram tee logo nam nữ áo thun tay lỡ sadboiz sadtagram full tag</p>
+                                             <div class="price">
+                                                <span class="price_text">200.000</span>
+                                                <span class="multily">x</span>
+                                                <span class="amount">2</span>
+                                             </div>
+                                        </div>
+                                        <div class="phanloai">
+                                            <span>Phân loại: Vãi</span>
+                                            <a href="">Xóa</a>
+                                        </div>
+                                    </div>
+                                </li>  
+                            </ul>
+                            <div class="view_all">
+                                <a href="#">Xem giỏ hàng</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page_item_container">
+                    <ul class="page_item">
+                        <li class="page_item_list">
+                            <a href="#" class="page_item_link">Liên quan</a>
+                        </li>
+                        <li class="page_item_list">
+                            <a href="#" class="page_item_link">Mới nhất</a>
+                        </li>
+                        <li class="page_item_list">
+                            <a href="#" class="page_item_link">Bán chạy</a>
+                        </li>
+                        <li class="page_item_list">
+                            <a href="#" class="page_item_link">Giá</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        
+    <div class="container">
+        <div class="grid ">
+            <div class="container1">
+                <div class="product_gruop">
+                    <h4 class="list_gruop_text">
+                         Danh mục
+                    </h4>
+                    <ul class="list_gruop">
+                        <li class="list_text"><a href="#">Sản phẩm được xử lý bởi Shopee</a></li>
+                        <li class="list_text"><a href="#">Nhạc cụ</a></li>
+                        <li class="list_text"><a href="#">Giá đỡ laptop</a></li>
+                    </ul>
+                </div>
+                <div class="donhang">
+                    <div class="header_donhang anthe">
+                        <div class="sorted_by">
+                            <p>Sắp xếp theo</p>
+                            <button href="#" class="btn_white btn_orgin trans">Phổ biến</button>
+                            <button href="#" class="btn_white trans">Mới nhất</button>
+                            <button href="#" class="btn_white trans">Bán chạy</button>
+                            <div class="sapxepgia">
+                                <a href="#" class="btn_white">
+                                    <span class="um">Giá: Từ cao đến thấp</span>
+                                    <span><i class="fa-solid fa-angle-down"></i></span>
+                                </a>
+                                <ul class="gia">
+                                    <li><a class="high_to_low" href="#">Từ cao đến thấp</a></li>
+                                    <li><a class="low_to_high" href="#">Từ thấp đến cao</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="muitentraiphai">
+                            <p>
+                                <span class="onetab">1</span>
+                                /
+                                <span class="fourteen">14</span>
+                            </p>
+                            <div class="arrow">
+                                <span class="left_arrow"><i class="fa-solid fa-angle-left"></i></span>
+                                <span class="right_aroow"><i class="fa-solid fa-angle-right"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list_donhang">
+                        <div class="grid_row">
+                            <div class="grid_column2">
+    
+                                <a href="##" class="home_product_item">
+                                    <div class="home_product_item_img" style="background-image: url(data:image/jpeg;base64,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);">
+                                    </div>
+                                    <h4 class="home_product_item_name">Áo thun nam nữ tay lỡ Sadboiz, form rộng unisex, chất cotton phong cách Hàn Quốc Ulzzang</h4>
+                                    <div class="home_product_item_price">
+                                        <span class="home_product_item_price_old">1.200.200đ</span>
+                                        <span class="home_product_item_price_current">999.000đ</span>
+                                    </div>
+                                    <div class="home_product_item_action">
+                                        <span class="home_product_item_like" value="1">
+                                            <span><i class="far fa-heart"></i></span>
+                                            <span><i class="fas fa-heart"></i></span>
+                                        </span>
+                                        <span class="home_product_item_star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                        <span class="sold">
+                                           88 Đã bán
+                                        </span>
+                                    </div>
+                                    <div class="home_product_item_origin">
+                                        <span class="home_product_item_brand">
+                                            Whoo
+                                        </span>
+                                        <span class="home_product_item_origin_name">
+                                            Hàn Quốc
+                                        </span>
+                                    </div>
+                                    <div class="home_product_item_favourite">
+                                            <span class="home_product_item_favourite_name"><i class="fa-solid fa-check"></i>Yêu thích</span>
+                                    </div>
+                                    <div class="home_product_item_sale_off">
+                                        <span class="home_product_item_perrent">
+                                            10%
+                                        </span>
+                                        <span class="home_product_item_label">
+                                            GIẢM
+                                        </span>
+                                    </div>
+                                </a> 
+    
+                            </div>
+                            <div class="grid_column2">
+    
+                                <a href="##" class="home_product_item">
+                                    <div class="home_product_item_img" style="background-image: url(data:image/jpeg;base64,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);">
+                                    </div>
+                                    <h4 class="home_product_item_name">Áo thun nam nữ tay lỡ Sadboiz, form rộng unisex, chất cotton phong cách Hàn Quốc Ulzzang</h4>
+                                    <div class="home_product_item_price">
+                                        <span class="home_product_item_price_old">1.200.200đ</span>
+                                        <span class="home_product_item_price_current">999.000đ</span>
+                                    </div>
+                                    <div class="home_product_item_action">
+                                        <span class="home_product_item_like" value="1">
+                                            <span><i class="far fa-heart"></i></span>
+                                            <span><i class="fas fa-heart"></i></span>
+                                        </span>
+                                        <span class="home_product_item_star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                        <span class="sold">
+                                           88 Đã bán
+                                        </span>
+                                    </div>
+                                    <div class="home_product_item_origin">
+                                        <span class="home_product_item_brand">
+                                            Whoo
+                                        </span>
+                                        <span class="home_product_item_origin_name">
+                                            Hàn Quốc
+                                        </span>
+                                    </div>
+                                    <div class="home_product_item_favourite">
+                                            <span class="home_product_item_favourite_name"><i class="fa-solid fa-check"></i>Yêu thích</span>
+                                    </div>
+                                    <div class="home_product_item_sale_off">
+                                        <span class="home_product_item_perrent">
+                                            10%
+                                        </span>
+                                        <span class="home_product_item_label">
+                                            GIẢM
+                                        </span>
+                                    </div>
+                                </a> 
+    
+                            </div>
+                            <div class="grid_column2">
+    
+                                <a href="##" class="home_product_item">
+                                    <div class="home_product_item_img" style="background-image: url(data:image/jpeg;base64,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);">
+                                    </div>
+                                    <h4 class="home_product_item_name">Áo thun nam nữ tay lỡ Sadboiz, form rộng unisex, chất cotton phong cách Hàn Quốc Ulzzang</h4>
+                                    <div class="home_product_item_price">
+                                        <span class="home_product_item_price_old">1.200.200đ</span>
+                                        <span class="home_product_item_price_current">999.000đ</span>
+                                    </div>
+                                    <div class="home_product_item_action">
+                                        <span class="home_product_item_like" value="1">
+                                            <span><i class="far fa-heart"></i></span>
+                                            <span><i class="fas fa-heart"></i></span>
+                                        </span>
+                                        <span class="home_product_item_star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                        <span class="sold">
+                                           88 Đã bán
+                                        </span>
+                                    </div>
+                                    <div class="home_product_item_origin">
+                                        <span class="home_product_item_brand">
+                                            Whoo
+                                        </span>
+                                        <span class="home_product_item_origin_name">
+                                            Hàn Quốc
+                                        </span>
+                                    </div>
+                                    <div class="home_product_item_favourite">
+                                            <span class="home_product_item_favourite_name"><i class="fa-solid fa-check"></i>Yêu thích</span>
+                                    </div>
+                                    <div class="home_product_item_sale_off">
+                                        <span class="home_product_item_perrent">
+                                            10%
+                                        </span>
+                                        <span class="home_product_item_label">
+                                            GIẢM
+                                        </span>
+                                    </div>
+                                </a> 
+    
+                            </div>
+                            <div class="grid_column2">
+    
+                                <a href="##" class="home_product_item">
+                                    <div class="home_product_item_img" style="background-image: url(data:image/jpeg;base64,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);">
+                                    </div>
+                                    <h4 class="home_product_item_name">Áo thun nam nữ tay lỡ Sadboiz, form rộng unisex, chất cotton phong cách Hàn Quốc Ulzzang</h4>
+                                    <div class="home_product_item_price">
+                                        <span class="home_product_item_price_old">1.200.200đ</span>
+                                        <span class="home_product_item_price_current">999.000đ</span>
+                                    </div>
+                                    <div class="home_product_item_action">
+                                        <span class="home_product_item_like" value="1">
+                                            <span><i class="far fa-heart"></i></span>
+                                            <span><i class="fas fa-heart"></i></span>
+                                        </span>
+                                        <span class="home_product_item_star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                        <span class="sold">
+                                           88 Đã bán
+                                        </span>
+                                    </div>
+                                    <div class="home_product_item_origin">
+                                        <span class="home_product_item_brand">
+                                            Whoo
+                                        </span>
+                                        <span class="home_product_item_origin_name">
+                                            Hàn Quốc
+                                        </span>
+                                    </div>
+                                    <div class="home_product_item_favourite">
+                                            <span class="home_product_item_favourite_name"><i class="fa-solid fa-check"></i>Yêu thích</span>
+                                    </div>
+                                    <div class="home_product_item_sale_off">
+                                        <span class="home_product_item_perrent">
+                                            10%
+                                        </span>
+                                        <span class="home_product_item_label">
+                                            GIẢM
+                                        </span>
+                                    </div>
+                                </a> 
+    
+                            </div>
+                            <div class="grid_column2">
+    
+                                <a href="##" class="home_product_item">
+                                    <div class="home_product_item_img" style="background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8NDw8QEA8ODw8PEA8PDw8ODg8NDQ8QFREWFhURFRUYHSggGBolGxUVITIhJSkuLi4yFx8zODMsNygtOisBCgoKDQ0NDw0NDisZFRk3LTcrNys3KysrLTc3LSs3LSsrKy0rKysrKysrKysrKysrKysrKysrKysrKysrKys3K//AABEIAOAA4QMBIgACEQEDEQH/xAAcAAEAAgIDAQAAAAAAAAAAAAAAAQIHCAMFBgT/xABIEAACAgEBBAYECgUKBwEAAAAAAQIDEQQFEiExBgcTQVFhInGBkSMyUnJzobGywdEUYoKi0hclMzVCU2Ojs/EkQ5KTwuHwFf/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAER/9oADAMBAAIRAxEAPwDIgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQBIIJAAAACMkgAAAAAAAAAAAAAAAAAAAAAAAAADpukHSfR7Ojm+1KbWY1R9O6fqiu7zeEB3J8G1Ns6bRx3r7q6k+SlJb0vmx5v2GKOkHWfqdRmGmj+i1/LeJ6hr18o+zPrPDX6mdknOc5Tm+c5yc5v1t8WBlrbPWlTDhpapWv+8tzXX7F8Z/UeM1/T3aN1kbO37NReVXVFRq9qed725PJuZVyAybsvrSsikr6FPxlVLdb/Zf5nfUdaGia9KF8PXCMvskYVjNntegnQiW2arrFqOx7GyNbXY9tvZipZ+PHHMluD2l/WloYrhDUTfgoQj9sjyPSbrO1OqhKrTw/Rq5LdlPe3tQ4vnhrhD2Zfg0eZ6V7L/8Az9bqNLv9p2Eox33Hccs1xn8XLx8bHPuOkcmUew2T1g7Q027F2RuhHHC5OU91d2+uPteTIXR7rH0mpxG2X6PY8LdtaUW/KfJ+3D8jB0WWTCto6r4zWU00zlNbNj9ItXoWuwulGK/5cvTq/wCl8vZgyR0b6z6rMQ1cVTPl2iy6X555x9vDzCMlg+fSayF0VKElJNZTTTTXij6AAAAAAAAAAAAAAAAAAB4vrG6YrZtXZUyT1l0fQ5PsYPh2sl488LvfkgPi6xOnv6FnS6Vp6pr4SzhKOnTXLHJzx3d3eYfu1MrZSnOUp2Tbc5zk5Tk/FtnzW2OTbk3KUm3KUm3KTby22+byVrfD2sDlciN4o2MgXyQQAJyc9Gttqyq7ba0+LVds6034vDPmGQL22ym3KUpSk+LlOTlJ+tvmcbJIYAtFlAgL5JUijCYV6roh0rs2faouTenk/Sj8h/LivtXeZ02XtCGorjKLTTSaaeU0+81jXN+tntugHS2WjmqbZfAyfoyb/o23y+a/qCM6A+fR6mNsU0z6AAAAAAAAAAAAAHXbe2xTs/Tz1F0sQhyS+NOb5Qiu9sD4umPSarZWndksStnmNFWcOyfi/CK5t/i0a97S11uqtsuum522Scpyfe/BLuSWEl3JH2dJNu3bR1Er7nxfowgnmFVeeEI/i+98TqWBVsmHIqyYfiBYEkAc+k08rpqEeb/2+1pe0+vaeyJ6ZJuUJxefShJSWU8NcG1zWP8AdZpsPtO3i6642tJylXOShGcU02m215Hc7Y1Otty5qMJU703a7qFY44392O61lcJSWE3x8wPNOD54eODzh4w+TKndajQbQsbhZK2eU21LUxnB7rXP08ZTcfej5pbD1Sx8C+PL4Srwb+V4JgdcQzspbD1Kx8GnluKatpccqLljO9w4JvicdeyNRNZUFyg+NtUXiUVKLw5eDX/yYHwA7GOwtU1FqpelFTXwtKe60mnhy4cGjr5xcW4vnFuLWU8NPD4oCACYgT3v1l0yj5ssgrI/V30wdTjprpcOCqm37oP8PcZdouU4po1ei8GVOr3plvbunvl6a4Qm38deD/W+0IykClViksouAAAAAAAABw6vUwprnZZKMK64uU5yeIxiubZgDpz0qntTUb3GOnrbVFb4YXfZJfKf1LC8c++64atbZTXGqG9o4+nf2bbsc0/R3o/IXPhni8vGEYcaAq2VZZlWBAh+IZFfIDkyCuSWwOw2Lp7LrXGuNMpKDeL478MOUY8Fh5lmSS4d59ivurrdv6NodyLcG1VVv8Jbu/iMuKU8Le5ZOkhNxeU2nhrKbTw1hr2pte0vHUTUHWpzVcmpOtTkq3JcpOPJvguPkB3W0526SUa7tJoFJwVkd2uFmYybxJuE2uO6+fdx70zqtZqO2abrqhiO6o1VquPjnHicEpt8W2+CXF54JJJepJJewhsA+WO7njuyUa8kS2AObQ6OWosjVXFOc84XjiLk/qTGr00qLJ1TWJ1ycJLmlJPDOGMmuKbT4rKbT4rD+pic3Jtttt8W22236wBZFUXCob4lkV7yUB9GlplbOFcFvWWTjXCOUt6cpKMVl8FltczudBsWy2qcqo3LU6e9wv33XTpYRWEsXyajGxSTzGTXDDWcM6LB2G0Nf20NNVGLhVpqYwjW2nHtXl23YXfKT588KK7gMqdB+ljm3ptQ4q+v0XicJxsx3xlFuL88MyDCakso116P7I1GonGVWYKMk1bxWGn/AGfFmd9gRsjWlY23hcXzfmEdqAAAAAAACllaksNZMddMereu/eu0m7Va8tw5U2PzS+K/Ne4yQQBq7tDQW6ax13VyrsXOMlz80+TXmj5WjZTb/RzTa+twurjL5L5Ti/GMlxTMO9KugGp0O9OpS1FC45S+Ggv1ormvNe5AeLlyIgWkikeCAs2MlQBbJOSuQBOSMgZAnIyQAJIbIGQLRZyROFHJHiAlzL4Ixn1nY7L2XbqpKNcc45yfCMfWwr5K4t4STb5JLi35Htei3QudzjK6LxzVf8X5Hp+ifQiFWJyW9PvnJcf2V3IyBpNHCpJRQR8Gydh10RXorgljhhI7dLBIAAAAAAAAAAAAUnWpc0XAHgulfVzp9ZPtavgLHJOx1pbtizxzHkpefvyYt6cbIhoNX2MI7sVTVLHPLe9xb73wNjzAnW7PO1bV8mmhfu5/EDxQBAEggASQAAJIAAkglAQi8HhlCyA9t0L2FVtCqyuaw+09GccKcHurk/w5GU+j/RarSRUYxW6uXe2/FvvZj3qon6Vi/Xj9cf8A0ZmjyQCEFHgiwAAAAAAAAAAAAAAAAAA1+61Z721tT5Khf5MX+JsAa89Zz/nfW/Op/wBCsDyxDGSGBIIAEggAACALMIhhASWiULQYHvuqueLbV51P7xnCvkvUYI6rpY1Ni8Ywf1v8zO1XxV6gLgAAAAAAAAAAAAAAAAACDXfrLedr6359f+jA2INcusWWdra76VL3VxQHmwwAABAEkAAAABIRBIAAID2XVpP/AItrxrz7pR/Mz5R8Veo146vLN3WpeNc19cX+BsJpHmEfUBzgAAAAAAAAAAAAAAAAACDW/rA/rXXfTv7qNkDW/rB/rXXfTv7qA88CGAAAAAAAAAAAAEogJgd90Ks3ddR578f3G/wNi9nPNcfUa3dE3jW6f57+5I2O2T/RR9QH2gAAAAAAAAAAAAAAAAACDXHrBX86676Z/dibHGuXT1Z2rrvp5fYgPNtEHNKBxtAVAAAAAQCQBBJDJQEEggDsej89zV6eX+LBe94/E2S2HLNMfUa07JeNRR9NV99GyfR9/AxA7QAAAAAAAAAAAAAAAAAAQYy6TdXdmp1l+ojelG+e+4KnMo+ilje3vLwMnEAYkj1UKXO+79z8iy6pYf31/wDl/wAJlkkDEv8AJJX/AH1/vr/hOWvqlo77L3+3Bf8AiZVAGLv5JdP8u/8A7kf4SY9U2mX9q5+uxfkZQAGMn1UaX/FXqsf5HDPqk075WXx9U4P7YmUwBif+SOnP9LqMfOr/AITlfVLp8fHvT8d+OfumUwBiOfVJBcr7vdD8jgu6pnj0L7E/GUIzXuWDMQAwvpuq6+qyEu3UlCcZY7FpvDzj43kZZ2NpnVWovmffgASAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/Z);">
+                                    </div>
+                                    <h4 class="home_product_item_name">Áo thun nam nữ tay lỡ Sadboiz, form rộng unisex, chất cotton phong cách Hàn Quốc Ulzzang</h4>
+                                    <div class="home_product_item_price">
+                                        <span class="home_product_item_price_old">1.200.200đ</span>
+                                        <span class="home_product_item_price_current">999.000đ</span>
+                                    </div>
+                                    <div class="home_product_item_action">
+                                        <span class="home_product_item_like" value="1">
+                                            <span><i class="far fa-heart"></i></span>
+                                            <span><i class="fas fa-heart"></i></span>
+                                        </span>
+                                        <span class="home_product_item_star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                        <span class="sold">
+                                           88 Đã bán
+                                        </span>
+                                    </div>
+                                    <div class="home_product_item_origin">
+                                        <span class="home_product_item_brand">
+                                            Whoo
+                                        </span>
+                                        <span class="home_product_item_origin_name">
+                                            Hàn Quốc
+                                        </span>
+                                    </div>
+                                    <div class="home_product_item_favourite">
+                                            <span class="home_product_item_favourite_name"><i class="fa-solid fa-check"></i>Yêu thích</span>
+                                    </div>
+                                    <div class="home_product_item_sale_off">
+                                        <span class="home_product_item_perrent">
+                                            10%
+                                        </span>
+                                        <span class="home_product_item_label">
+                                            GIẢM
+                                        </span>
+                                    </div>
+                                </a> 
+    
+                            </div>
+                            <div class="grid_column2">
+    
+                                <a href="##" class="home_product_item">
+                                    <div class="home_product_item_img" style="background-image: url(data:image/jpeg;base64,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);">
+                                    </div>
+                                    <h4 class="home_product_item_name">Áo thun nam nữ tay lỡ Sadboiz, form rộng unisex, chất cotton phong cách Hàn Quốc Ulzzang</h4>
+                                    <div class="home_product_item_price">
+                                        <span class="home_product_item_price_old">1.200.200đ</span>
+                                        <span class="home_product_item_price_current">999.000đ</span>
+                                    </div>
+                                    <div class="home_product_item_action">
+                                        <span class="home_product_item_like" value="1">
+                                            <span><i class="far fa-heart"></i></span>
+                                            <span><i class="fas fa-heart"></i></span>
+                                        </span>
+                                        <span class="home_product_item_star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                        <span class="sold">
+                                           88 Đã bán
+                                        </span>
+                                    </div>
+                                    <div class="home_product_item_origin">
+                                        <span class="home_product_item_brand">
+                                            Whoo
+                                        </span>
+                                        <span class="home_product_item_origin_name">
+                                            Hàn Quốc
+                                        </span>
+                                    </div>
+                                    <div class="home_product_item_favourite">
+                                            <span class="home_product_item_favourite_name"><i class="fa-solid fa-check"></i>Yêu thích</span>
+                                    </div>
+                                    <div class="home_product_item_sale_off">
+                                        <span class="home_product_item_perrent">
+                                            10%
+                                        </span>
+                                        <span class="home_product_item_label">
+                                            GIẢM
+                                        </span>
+                                    </div>
+                                </a> 
+    
+                            </div>
+                            <div class="grid_column2">
+    
+                                <a href="##" class="home_product_item">
+                                    <div class="home_product_item_img" style="background-image: url(data:image/jpeg;base64,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);">
+                                    </div>
+                                    <h4 class="home_product_item_name">Áo thun nam nữ tay lỡ Sadboiz, form rộng unisex, chất cotton phong cách Hàn Quốc Ulzzang</h4>
+                                    <div class="home_product_item_price">
+                                        <span class="home_product_item_price_old">1.200.200đ</span>
+                                        <span class="home_product_item_price_current">999.000đ</span>
+                                    </div>
+                                    <div class="home_product_item_action">
+                                        <span class="home_product_item_like" value="1">
+                                            <span><i class="far fa-heart"></i></span>
+                                            <span><i class="fas fa-heart"></i></span>
+                                        </span>
+                                        <span class="home_product_item_star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                        <span class="sold">
+                                           88 Đã bán
+                                        </span>
+                                    </div>
+                                    <div class="home_product_item_origin">
+                                        <span class="home_product_item_brand">
+                                            Whoo
+                                        </span>
+                                        <span class="home_product_item_origin_name">
+                                            Hàn Quốc
+                                        </span>
+                                    </div>
+                                    <div class="home_product_item_favourite">
+                                            <span class="home_product_item_favourite_name"><i class="fa-solid fa-check"></i>Yêu thích</span>
+                                    </div>
+                                    <div class="home_product_item_sale_off">
+                                        <span class="home_product_item_perrent">
+                                            10%
+                                        </span>
+                                        <span class="home_product_item_label">
+                                            GIẢM
+                                        </span>
+                                    </div>
+                                </a> 
+    
+                            </div>
+                            <div class="grid_column2">
+    
+                                <a href="##" class="home_product_item">
+                                    <div class="home_product_item_img" style="background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8NDw8QEA8ODw8PEA8PDw8ODg8NDQ8QFREWFhURFRUYHSggGBolGxUVITIhJSkuLi4yFx8zODMsNygtOisBCgoKDQ0NDw0NDisZFRk3LTcrNys3KysrLTc3LSs3LSsrKy0rKysrKysrKysrKysrKysrKysrKysrKysrKys3K//AABEIAOAA4QMBIgACEQEDEQH/xAAcAAEAAgIDAQAAAAAAAAAAAAAAAQIHCAMFBgT/xABIEAACAgEBBAYECgUKBwEAAAAAAQIDEQQFEiExBgcTQVFhInGBkSMyUnJzobGywdEUYoKi0hclMzVCU2Ojs/EkQ5KTwuHwFf/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAER/9oADAMBAAIRAxEAPwDIgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQBIIJAAAACMkgAAAAAAAAAAAAAAAAAAAAAAAAADpukHSfR7Ojm+1KbWY1R9O6fqiu7zeEB3J8G1Ns6bRx3r7q6k+SlJb0vmx5v2GKOkHWfqdRmGmj+i1/LeJ6hr18o+zPrPDX6mdknOc5Tm+c5yc5v1t8WBlrbPWlTDhpapWv+8tzXX7F8Z/UeM1/T3aN1kbO37NReVXVFRq9qed725PJuZVyAybsvrSsikr6FPxlVLdb/Zf5nfUdaGia9KF8PXCMvskYVjNntegnQiW2arrFqOx7GyNbXY9tvZipZ+PHHMluD2l/WloYrhDUTfgoQj9sjyPSbrO1OqhKrTw/Rq5LdlPe3tQ4vnhrhD2Zfg0eZ6V7L/8Az9bqNLv9p2Eox33Hccs1xn8XLx8bHPuOkcmUew2T1g7Q027F2RuhHHC5OU91d2+uPteTIXR7rH0mpxG2X6PY8LdtaUW/KfJ+3D8jB0WWTCto6r4zWU00zlNbNj9ItXoWuwulGK/5cvTq/wCl8vZgyR0b6z6rMQ1cVTPl2iy6X555x9vDzCMlg+fSayF0VKElJNZTTTTXij6AAAAAAAAAAAAAAAAAAB4vrG6YrZtXZUyT1l0fQ5PsYPh2sl488LvfkgPi6xOnv6FnS6Vp6pr4SzhKOnTXLHJzx3d3eYfu1MrZSnOUp2Tbc5zk5Tk/FtnzW2OTbk3KUm3KUm3KTby22+byVrfD2sDlciN4o2MgXyQQAJyc9Gttqyq7ba0+LVds6034vDPmGQL22ym3KUpSk+LlOTlJ+tvmcbJIYAtFlAgL5JUijCYV6roh0rs2faouTenk/Sj8h/LivtXeZ02XtCGorjKLTTSaaeU0+81jXN+tntugHS2WjmqbZfAyfoyb/o23y+a/qCM6A+fR6mNsU0z6AAAAAAAAAAAAAHXbe2xTs/Tz1F0sQhyS+NOb5Qiu9sD4umPSarZWndksStnmNFWcOyfi/CK5t/i0a97S11uqtsuum522Scpyfe/BLuSWEl3JH2dJNu3bR1Er7nxfowgnmFVeeEI/i+98TqWBVsmHIqyYfiBYEkAc+k08rpqEeb/2+1pe0+vaeyJ6ZJuUJxefShJSWU8NcG1zWP8AdZpsPtO3i6642tJylXOShGcU02m215Hc7Y1Otty5qMJU703a7qFY44392O61lcJSWE3x8wPNOD54eODzh4w+TKndajQbQsbhZK2eU21LUxnB7rXP08ZTcfej5pbD1Sx8C+PL4Srwb+V4JgdcQzspbD1Kx8GnluKatpccqLljO9w4JvicdeyNRNZUFyg+NtUXiUVKLw5eDX/yYHwA7GOwtU1FqpelFTXwtKe60mnhy4cGjr5xcW4vnFuLWU8NPD4oCACYgT3v1l0yj5ssgrI/V30wdTjprpcOCqm37oP8PcZdouU4po1ei8GVOr3plvbunvl6a4Qm38deD/W+0IykClViksouAAAAAAAABw6vUwprnZZKMK64uU5yeIxiubZgDpz0qntTUb3GOnrbVFb4YXfZJfKf1LC8c++64atbZTXGqG9o4+nf2bbsc0/R3o/IXPhni8vGEYcaAq2VZZlWBAh+IZFfIDkyCuSWwOw2Lp7LrXGuNMpKDeL478MOUY8Fh5lmSS4d59ivurrdv6NodyLcG1VVv8Jbu/iMuKU8Le5ZOkhNxeU2nhrKbTw1hr2pte0vHUTUHWpzVcmpOtTkq3JcpOPJvguPkB3W0526SUa7tJoFJwVkd2uFmYybxJuE2uO6+fdx70zqtZqO2abrqhiO6o1VquPjnHicEpt8W2+CXF54JJJepJJewhsA+WO7njuyUa8kS2AObQ6OWosjVXFOc84XjiLk/qTGr00qLJ1TWJ1ycJLmlJPDOGMmuKbT4rKbT4rD+pic3Jtttt8W22236wBZFUXCob4lkV7yUB9GlplbOFcFvWWTjXCOUt6cpKMVl8FltczudBsWy2qcqo3LU6e9wv33XTpYRWEsXyajGxSTzGTXDDWcM6LB2G0Nf20NNVGLhVpqYwjW2nHtXl23YXfKT588KK7gMqdB+ljm3ptQ4q+v0XicJxsx3xlFuL88MyDCakso116P7I1GonGVWYKMk1bxWGn/AGfFmd9gRsjWlY23hcXzfmEdqAAAAAAACllaksNZMddMereu/eu0m7Va8tw5U2PzS+K/Ne4yQQBq7tDQW6ax13VyrsXOMlz80+TXmj5WjZTb/RzTa+twurjL5L5Ti/GMlxTMO9KugGp0O9OpS1FC45S+Ggv1ormvNe5AeLlyIgWkikeCAs2MlQBbJOSuQBOSMgZAnIyQAJIbIGQLRZyROFHJHiAlzL4Ixn1nY7L2XbqpKNcc45yfCMfWwr5K4t4STb5JLi35Htei3QudzjK6LxzVf8X5Hp+ifQiFWJyW9PvnJcf2V3IyBpNHCpJRQR8Gydh10RXorgljhhI7dLBIAAAAAAAAAAAAUnWpc0XAHgulfVzp9ZPtavgLHJOx1pbtizxzHkpefvyYt6cbIhoNX2MI7sVTVLHPLe9xb73wNjzAnW7PO1bV8mmhfu5/EDxQBAEggASQAAJIAAkglAQi8HhlCyA9t0L2FVtCqyuaw+09GccKcHurk/w5GU+j/RarSRUYxW6uXe2/FvvZj3qon6Vi/Xj9cf8A0ZmjyQCEFHgiwAAAAAAAAAAAAAAAAAA1+61Z721tT5Khf5MX+JsAa89Zz/nfW/Op/wBCsDyxDGSGBIIAEggAACALMIhhASWiULQYHvuqueLbV51P7xnCvkvUYI6rpY1Ni8Ywf1v8zO1XxV6gLgAAAAAAAAAAAAAAAAACDXfrLedr6359f+jA2INcusWWdra76VL3VxQHmwwAABAEkAAAABIRBIAAID2XVpP/AItrxrz7pR/Mz5R8Veo146vLN3WpeNc19cX+BsJpHmEfUBzgAAAAAAAAAAAAAAAAACDW/rA/rXXfTv7qNkDW/rB/rXXfTv7qA88CGAAAAAAAAAAAAEogJgd90Ks3ddR578f3G/wNi9nPNcfUa3dE3jW6f57+5I2O2T/RR9QH2gAAAAAAAAAAAAAAAAACDXHrBX86676Z/dibHGuXT1Z2rrvp5fYgPNtEHNKBxtAVAAAAAQCQBBJDJQEEggDsej89zV6eX+LBe94/E2S2HLNMfUa07JeNRR9NV99GyfR9/AxA7QAAAAAAAAAAAAAAAAAAQYy6TdXdmp1l+ojelG+e+4KnMo+ilje3vLwMnEAYkj1UKXO+79z8iy6pYf31/wDl/wAJlkkDEv8AJJX/AH1/vr/hOWvqlo77L3+3Bf8AiZVAGLv5JdP8u/8A7kf4SY9U2mX9q5+uxfkZQAGMn1UaX/FXqsf5HDPqk075WXx9U4P7YmUwBif+SOnP9LqMfOr/AITlfVLp8fHvT8d+OfumUwBiOfVJBcr7vdD8jgu6pnj0L7E/GUIzXuWDMQAwvpuq6+qyEu3UlCcZY7FpvDzj43kZZ2NpnVWovmffgASAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/Z);">
+                                    </div>
+                                    <h4 class="home_product_item_name">Áo thun nam nữ tay lỡ Sadboiz, form rộng unisex, chất cotton phong cách Hàn Quốc Ulzzang</h4>
+                                    <div class="home_product_item_price">
+                                        <span class="home_product_item_price_old">1.200.200đ</span>
+                                        <span class="home_product_item_price_current">999.000đ</span>
+                                    </div>
+                                    <div class="home_product_item_action">
+                                        <span class="home_product_item_like" value="1">
+                                            <span><i class="far fa-heart"></i></span>
+                                            <span><i class="fas fa-heart"></i></span>
+                                        </span>
+                                        <span class="home_product_item_star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                        <span class="sold">
+                                           88 Đã bán
+                                        </span>
+                                    </div>
+                                    <div class="home_product_item_origin">
+                                        <span class="home_product_item_brand">
+                                            Whoo
+                                        </span>
+                                        <span class="home_product_item_origin_name">
+                                            Hàn Quốc
+                                        </span>
+                                    </div>
+                                    <div class="home_product_item_favourite">
+                                            <span class="home_product_item_favourite_name"><i class="fa-solid fa-check"></i>Yêu thích</span>
+                                    </div>
+                                    <div class="home_product_item_sale_off">
+                                        <span class="home_product_item_perrent">
+                                            10%
+                                        </span>
+                                        <span class="home_product_item_label">
+                                            GIẢM
+                                        </span>
+                                    </div>
+                                </a> 
+    
+                            </div>
+                            <div class="grid_column2">
+    
+                                <a href="##" class="home_product_item">
+                                    <div class="home_product_item_img" style="background-image: url(data:image/jpeg;base64,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);">
+                                    </div>
+                                    <h4 class="home_product_item_name">Áo thun nam nữ tay lỡ Sadboiz, form rộng unisex, chất cotton phong cách Hàn Quốc Ulzzang</h4>
+                                    <div class="home_product_item_price">
+                                        <span class="home_product_item_price_old">1.200.200đ</span>
+                                        <span class="home_product_item_price_current">999.000đ</span>
+                                    </div>
+                                    <div class="home_product_item_action">
+                                        <span class="home_product_item_like" value="1">
+                                            <span><i class="far fa-heart"></i></span>
+                                            <span><i class="fas fa-heart"></i></span>
+                                        </span>
+                                        <span class="home_product_item_star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                        <span class="sold">
+                                           88 Đã bán
+                                        </span>
+                                    </div>
+                                    <div class="home_product_item_origin">
+                                        <span class="home_product_item_brand">
+                                            Whoo
+                                        </span>
+                                        <span class="home_product_item_origin_name">
+                                            Hàn Quốc
+                                        </span>
+                                    </div>
+                                    <div class="home_product_item_favourite">
+                                            <span class="home_product_item_favourite_name"><i class="fa-solid fa-check"></i>Yêu thích</span>
+                                    </div>
+                                    <div class="home_product_item_sale_off">
+                                        <span class="home_product_item_perrent">
+                                            10%
+                                        </span>
+                                        <span class="home_product_item_label">
+                                            GIẢM
+                                        </span>
+                                    </div>
+                                </a> 
+    
+                            </div>
+                            <div class="grid_column2">
+    
+                                <a href="##" class="home_product_item">
+                                    <div class="home_product_item_img" style="background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8NDw8QEA8ODw8PEA8PDw8ODg8NDQ8QFREWFhURFRUYHSggGBolGxUVITIhJSkuLi4yFx8zODMsNygtOisBCgoKDQ0NDw0NDisZFRk3LTcrNys3KysrLTc3LSs3LSsrKy0rKysrKysrKysrKysrKysrKysrKysrKysrKys3K//AABEIAOAA4QMBIgACEQEDEQH/xAAcAAEAAgIDAQAAAAAAAAAAAAAAAQIHCAMFBgT/xABIEAACAgEBBAYECgUKBwEAAAAAAQIDEQQFEiExBgcTQVFhInGBkSMyUnJzobGywdEUYoKi0hclMzVCU2Ojs/EkQ5KTwuHwFf/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAER/9oADAMBAAIRAxEAPwDIgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQBIIJAAAACMkgAAAAAAAAAAAAAAAAAAAAAAAAADpukHSfR7Ojm+1KbWY1R9O6fqiu7zeEB3J8G1Ns6bRx3r7q6k+SlJb0vmx5v2GKOkHWfqdRmGmj+i1/LeJ6hr18o+zPrPDX6mdknOc5Tm+c5yc5v1t8WBlrbPWlTDhpapWv+8tzXX7F8Z/UeM1/T3aN1kbO37NReVXVFRq9qed725PJuZVyAybsvrSsikr6FPxlVLdb/Zf5nfUdaGia9KF8PXCMvskYVjNntegnQiW2arrFqOx7GyNbXY9tvZipZ+PHHMluD2l/WloYrhDUTfgoQj9sjyPSbrO1OqhKrTw/Rq5LdlPe3tQ4vnhrhD2Zfg0eZ6V7L/8Az9bqNLv9p2Eox33Hccs1xn8XLx8bHPuOkcmUew2T1g7Q027F2RuhHHC5OU91d2+uPteTIXR7rH0mpxG2X6PY8LdtaUW/KfJ+3D8jB0WWTCto6r4zWU00zlNbNj9ItXoWuwulGK/5cvTq/wCl8vZgyR0b6z6rMQ1cVTPl2iy6X555x9vDzCMlg+fSayF0VKElJNZTTTTXij6AAAAAAAAAAAAAAAAAAB4vrG6YrZtXZUyT1l0fQ5PsYPh2sl488LvfkgPi6xOnv6FnS6Vp6pr4SzhKOnTXLHJzx3d3eYfu1MrZSnOUp2Tbc5zk5Tk/FtnzW2OTbk3KUm3KUm3KTby22+byVrfD2sDlciN4o2MgXyQQAJyc9Gttqyq7ba0+LVds6034vDPmGQL22ym3KUpSk+LlOTlJ+tvmcbJIYAtFlAgL5JUijCYV6roh0rs2faouTenk/Sj8h/LivtXeZ02XtCGorjKLTTSaaeU0+81jXN+tntugHS2WjmqbZfAyfoyb/o23y+a/qCM6A+fR6mNsU0z6AAAAAAAAAAAAAHXbe2xTs/Tz1F0sQhyS+NOb5Qiu9sD4umPSarZWndksStnmNFWcOyfi/CK5t/i0a97S11uqtsuum522Scpyfe/BLuSWEl3JH2dJNu3bR1Er7nxfowgnmFVeeEI/i+98TqWBVsmHIqyYfiBYEkAc+k08rpqEeb/2+1pe0+vaeyJ6ZJuUJxefShJSWU8NcG1zWP8AdZpsPtO3i6642tJylXOShGcU02m215Hc7Y1Otty5qMJU703a7qFY44392O61lcJSWE3x8wPNOD54eODzh4w+TKndajQbQsbhZK2eU21LUxnB7rXP08ZTcfej5pbD1Sx8C+PL4Srwb+V4JgdcQzspbD1Kx8GnluKatpccqLljO9w4JvicdeyNRNZUFyg+NtUXiUVKLw5eDX/yYHwA7GOwtU1FqpelFTXwtKe60mnhy4cGjr5xcW4vnFuLWU8NPD4oCACYgT3v1l0yj5ssgrI/V30wdTjprpcOCqm37oP8PcZdouU4po1ei8GVOr3plvbunvl6a4Qm38deD/W+0IykClViksouAAAAAAAABw6vUwprnZZKMK64uU5yeIxiubZgDpz0qntTUb3GOnrbVFb4YXfZJfKf1LC8c++64atbZTXGqG9o4+nf2bbsc0/R3o/IXPhni8vGEYcaAq2VZZlWBAh+IZFfIDkyCuSWwOw2Lp7LrXGuNMpKDeL478MOUY8Fh5lmSS4d59ivurrdv6NodyLcG1VVv8Jbu/iMuKU8Le5ZOkhNxeU2nhrKbTw1hr2pte0vHUTUHWpzVcmpOtTkq3JcpOPJvguPkB3W0526SUa7tJoFJwVkd2uFmYybxJuE2uO6+fdx70zqtZqO2abrqhiO6o1VquPjnHicEpt8W2+CXF54JJJepJJewhsA+WO7njuyUa8kS2AObQ6OWosjVXFOc84XjiLk/qTGr00qLJ1TWJ1ycJLmlJPDOGMmuKbT4rKbT4rD+pic3Jtttt8W22236wBZFUXCob4lkV7yUB9GlplbOFcFvWWTjXCOUt6cpKMVl8FltczudBsWy2qcqo3LU6e9wv33XTpYRWEsXyajGxSTzGTXDDWcM6LB2G0Nf20NNVGLhVpqYwjW2nHtXl23YXfKT588KK7gMqdB+ljm3ptQ4q+v0XicJxsx3xlFuL88MyDCakso116P7I1GonGVWYKMk1bxWGn/AGfFmd9gRsjWlY23hcXzfmEdqAAAAAAACllaksNZMddMereu/eu0m7Va8tw5U2PzS+K/Ne4yQQBq7tDQW6ax13VyrsXOMlz80+TXmj5WjZTb/RzTa+twurjL5L5Ti/GMlxTMO9KugGp0O9OpS1FC45S+Ggv1ormvNe5AeLlyIgWkikeCAs2MlQBbJOSuQBOSMgZAnIyQAJIbIGQLRZyROFHJHiAlzL4Ixn1nY7L2XbqpKNcc45yfCMfWwr5K4t4STb5JLi35Htei3QudzjK6LxzVf8X5Hp+ifQiFWJyW9PvnJcf2V3IyBpNHCpJRQR8Gydh10RXorgljhhI7dLBIAAAAAAAAAAAAUnWpc0XAHgulfVzp9ZPtavgLHJOx1pbtizxzHkpefvyYt6cbIhoNX2MI7sVTVLHPLe9xb73wNjzAnW7PO1bV8mmhfu5/EDxQBAEggASQAAJIAAkglAQi8HhlCyA9t0L2FVtCqyuaw+09GccKcHurk/w5GU+j/RarSRUYxW6uXe2/FvvZj3qon6Vi/Xj9cf8A0ZmjyQCEFHgiwAAAAAAAAAAAAAAAAAA1+61Z721tT5Khf5MX+JsAa89Zz/nfW/Op/wBCsDyxDGSGBIIAEggAACALMIhhASWiULQYHvuqueLbV51P7xnCvkvUYI6rpY1Ni8Ywf1v8zO1XxV6gLgAAAAAAAAAAAAAAAAACDXfrLedr6359f+jA2INcusWWdra76VL3VxQHmwwAABAEkAAAABIRBIAAID2XVpP/AItrxrz7pR/Mz5R8Veo146vLN3WpeNc19cX+BsJpHmEfUBzgAAAAAAAAAAAAAAAAACDW/rA/rXXfTv7qNkDW/rB/rXXfTv7qA88CGAAAAAAAAAAAAEogJgd90Ks3ddR578f3G/wNi9nPNcfUa3dE3jW6f57+5I2O2T/RR9QH2gAAAAAAAAAAAAAAAAACDXHrBX86676Z/dibHGuXT1Z2rrvp5fYgPNtEHNKBxtAVAAAAAQCQBBJDJQEEggDsej89zV6eX+LBe94/E2S2HLNMfUa07JeNRR9NV99GyfR9/AxA7QAAAAAAAAAAAAAAAAAAQYy6TdXdmp1l+ojelG+e+4KnMo+ilje3vLwMnEAYkj1UKXO+79z8iy6pYf31/wDl/wAJlkkDEv8AJJX/AH1/vr/hOWvqlo77L3+3Bf8AiZVAGLv5JdP8u/8A7kf4SY9U2mX9q5+uxfkZQAGMn1UaX/FXqsf5HDPqk075WXx9U4P7YmUwBif+SOnP9LqMfOr/AITlfVLp8fHvT8d+OfumUwBiOfVJBcr7vdD8jgu6pnj0L7E/GUIzXuWDMQAwvpuq6+qyEu3UlCcZY7FpvDzj43kZZ2NpnVWovmffgASAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/Z);">
+                                    </div>
+                                    <h4 class="home_product_item_name">Áo thun nam nữ tay lỡ Sadboiz, form rộng unisex, chất cotton phong cách Hàn Quốc Ulzzang</h4>
+                                    <div class="home_product_item_price">
+                                        <span class="home_product_item_price_old">1.200.200đ</span>
+                                        <span class="home_product_item_price_current">999.000đ</span>
+                                    </div>
+                                    <div class="home_product_item_action">
+                                        <span class="home_product_item_like" value="1">
+                                            <span><i class="far fa-heart"></i></span>
+                                            <span><i class="fas fa-heart"></i></span>
+                                        </span>
+                                        <span class="home_product_item_star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                        <span class="sold">
+                                           88 Đã bán
+                                        </span>
+                                    </div>
+                                    <div class="home_product_item_origin">
+                                        <span class="home_product_item_brand">
+                                            Whoo
+                                        </span>
+                                        <span class="home_product_item_origin_name">
+                                            Hàn Quốc
+                                        </span>
+                                    </div>
+                                    <div class="home_product_item_favourite">
+                                            <span class="home_product_item_favourite_name"><i class="fa-solid fa-check"></i>Yêu thích</span>
+                                    </div>
+                                    <div class="home_product_item_sale_off">
+                                        <span class="home_product_item_perrent">
+                                            10%
+                                        </span>
+                                        <span class="home_product_item_label">
+                                            GIẢM
+                                        </span>
+                                    </div>
+                                </a> 
+    
+                            </div>
+                        </div>
+                        <div class="sotrang">
+                            <ul class="numbertab numbertab_margin">
+                                <li class="list_number"><a href="##" class="number"><i class="fa-solid fa-angle-left"></i></a></li>
+                                <li class="list_number"><a href="##" class="number">1</a></li>
+                                <li class="list_number"><a href="##" class="number">2</a></li>
+                                <li class="list_number"><a href="##" class="number">3</a></li>
+                                <li class="list_number"><a href="##" class="number">4</a></li>
+                                <li class="list_number"><a href="##" class="number">5</a></li>
+                                <li class="list_number"><a href="##" class="number">...</a></li>
+                                <li class="list_number"><a href="##" class="number">14</a></li>
+                                <li class="list_number"><a href="##" class="number"><i class="fa-solid fa-angle-right"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="grid">
+            <div class="grid_row">
+                <div class="grid_column2">
+                    <h3 class="text_khachhang">Chăm sóc khách hàng</h3>
+                    <ul class="footer_list">
+                        <li class="footer_item">
+                            <a href="##" class="footer_item_link">Trung tâm trợ giúp</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="##" class="footer_item_link">F8 Email</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="##" class="footer_item_link">Hướng dẫn mua hàng</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid_column2">
+                    <h3 class="text_khachhang">Danh mục</h3>
+                    <ul class="footer_list">
+                        <li class="footer_item">
+                            <a href="##" class="footer_item_link">Áo Font rộng</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="##" class="footer_item_link">Nhạc cụ</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="##" class="footer_item_link">Giá đỡ laptop</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid_column2">
+                    <h3 class="text_khachhang">Theo dõi chúng tôi</h3>
+                    <ul class="footer_list">
+                        <li class="footer_item">
+                            <a href="##" class="footer_item_link">
+                                <i class="fab fa-facebook"></i>
+                                Facebook
+                            </a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="##" class="footer_item_link">
+                                <i class="fab fa-instagram"></i>
+                                Instargram
+                            </a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="##" class="footer_item_link">
+                                <i class="fa-brands fa-linkedin"></i>
+                                LinkedIn
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid_column2">
+                    <h3 class="text_khachhang">Vào cửa hàng</h3>
+                    <ul class="footer_list">
+                        <li class="footer_item">
+                            <img src="qrcode.png" alt="" class="footer_img_bottom">
+                            <div class="footer_app">
+                                <a href="#">
+                                    <img src="googleplay.png" alt="" class="img_app">
+                                </a>
+                                <a href="#">
+                                    <img src="appstore.png" alt="" class="img_app">
+                                </a>
+                                </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer_end">
+            <div class="grid">
+                <ul class="footer_policy">
+                    <li class="footer_policy_item"><a href="" class="footer_policy_link">Chính sách bảo mật</a></li>
+                    <li class="footer_policy_item"><a href="" class="footer_policy_link">Cơ chết hoạt động</a></li>
+                    <li class="footer_policy_item"><a href="" class="footer_policy_link">Chính sách vận chuyển</a></li>
+                    <li class="footer_policy_item"><a href="" class="footer_policy_link">Chính sách trả hàng và hoàn tiền</a></li>
+                </ul>
+                <div class="dangkycongty">
+                    <img src="checked.png" alt="" class="checkdangky">
+                    <div class="dangkycongty_text">
+                        <p>Công ty TNHH F8Pro</p>
+                        <p>Địa chỉ: Số 20, ngã 538, đường Láng, quận Đống Đa, thành phố Hà Nội</p>
+                        <p>Mã số doanh nghiệp: 0108838679 do Sở Kế Hoạch & Đầu Tư TP Hà Nội cấp lần đầu ngày 10/02/2015</p>
+                        <p>© 2015 - Bản quyền thuộc về Công ty TNHH F8Pro123</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <div class="shadow_model close model_registration">
+        <div class="model_dangky stop_close_model">
+            <div class="content_dangky">
+                <header class="text">
+                    <h2  class="text_dangky">Đăng ký</h2>
+                    <h4 class="text_dangnhap" onclick="convert()" >Đăng nhập</h4>
+                </header>
+                <form action="" class="form_dangky"  >
+                    <input type="tel" placeholder="Email/Số điện thoại"  >
+                    <input type="password" placeholder="Nhập mật khẩu của bạn"  >
+                    <input type="password" placeholder="Nhập lại mật khẩu của bạn"  >
+                    <div class="rules">
+                        <p class="content_rules">Bằng việc đăng kí, bạn đã đồng ý với Shopee về <a href="">Điều khoản dịch vụ</a> & <a href="">Chính sách bảo mật</a></p>
+                    </div>
+                    <div class="button_dangky">
+                        <button class="close">Trở lại</button>
+                        <button>Đăng ký</button>
+                    </div>
+                </form>
+        </div>
+            <div class="connect">
+                <div class="with fb">
+                    <a class="facebook" href=""><i class="fa-brands fa-facebook-square size_icon"></i><span>Kết nối với Facebook</span></a>
+                </div>
+                <div class="with gg">
+                    <a class="google" href=""><i class="fa-brands fa-google size_icon"></i></i><span>Kết nối với Google</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shadow_model close model_login">
+        <div class="model_dangnhap stop_close_model">
+            <div class="content_dangky">
+                <header class="text">
+                    <h2  class="text_dangky ">Đăng Nhập<h2>
+                    <h4 class="text_dangnhap" onclick="convert()" >Đăng Ký</h4>
+                </header>
+                <form action="" class="form_dangnhap"  >
+                    <input type="tel" placeholder="Email/Số điện thoại"  >
+                    <input type="password" placeholder="Mật khẩu của bạn"  >
+                    <div class="help">
+                        <a href="" class="forgot_ps">Quên mật khẩu</a>
+                        <span class="help_gach"></span>
+                        <a href="" class="need_help">Cần trợ giúp?</a>
+                    </div>
+                    <div class="button_dangky">
+                        <button class="close">Trở lại</button>
+                        <button>Đăng Nhập</button>
+                    </div>
+                </form>
+            </div>
+            <div class="connect">
+                <div class="with ssm">
+                    <a class="messege" href=""><i class="fa-solid fa-comment-dots size_icon"></i><span>SSM</span></a>
+                </div>
+                <div class="with fb">
+                    <a class="facebook" href=""><i class="fa-brands fa-facebook-square size_icon"></i><span>Facebook</span></a>
+                </div>
+                <div class="with gg">
+                    <a class="google" href=""><i class="fa-brands fa-google size_icon"></i></i><span>Google</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+      
+        var trongcheck=document.querySelector('.trong>i[class*="fa-check"]');
+        var ngoaicheck=document.querySelector('.ngoai>i[class*="fa-check"]');
+        var nuoc=document.querySelector(".nuoc");
+        var arraynuoc=document.querySelectorAll(".nuoc>li");
+        arraynuoc[0].onclick= function name(params) {
+            trongcheck.style.display="inline-block";
+            ngoaicheck.style.display="none";
+            document.querySelector(".in_the_store").innerHTML="Trong nước";
+        }
+        arraynuoc[1].onclick= function name(params) {
+            ngoaicheck.style.display="inline-block";
+            trongcheck.style.display="none";
+            document.querySelector(".in_the_store").innerHTML="Ngoài nước";
+        }
+
+        document.querySelector("#dangky").addEventListener("click",function registration(param) {
+            document.querySelector(".model_registration").style.display="flex"
+        })
+        document.querySelector("#dangnhap").addEventListener("click",function login(param) {
+            document.querySelector(".model_login").style.display="flex"
+        })
+        var gia=document.querySelectorAll(".gia>li>a[href*='#']");
+        for (let index of gia) {
+            index.onclick=function (params) {
+                document.querySelector('.um').innerHTML="Giá: "+index.textContent;
+            }
+        }
+        var text_chuyen=document.querySelector(".text_dangnhap").textContent;
+        function convert (params) {
+            if(text_chuyen=="Đăng nhập")
+            {
+                document.querySelector(".model_login").style.display="flex"
+                document.querySelector(".model_registration").style.display="none"
+                text_chuyen="Đăng Ký";
+            }
+            else if(text_chuyen=="Đăng Ký")
+            {
+                document.querySelector(".model_registration").style.display="flex"
+                document.querySelector(".model_login").style.display="none"
+                text_chuyen="Đăng nhập";
+            }
+        }
+        var closess=document.querySelectorAll(".close");
+        for (let index of closess) {
+            index.addEventListener("click",dong)
+        }
+        function dong(params) {
+            document.querySelector(".model_login").style.display="none"
+            document.querySelector(".model_registration").style.display="none"
+        }
+         var stops=document.querySelectorAll(".stop_close_model");
+         for (let hi of stops)
+         {
+             hi.addEventListener("click",function (params) {
+            params.stopPropagation();
+             })
+         }
+        var btn=document.querySelectorAll(".sorted_by>.btn_white");
+        for (let index of btn) {
+            index.addEventListener("click",function name(params) {
+                for (let hi of btn) {
+                    hi.classList.remove("btn_orgin")
+                }
+            index.classList.add("btn_orgin")
+        })
+        }
+        var muchang=document.querySelectorAll(".page_item_link");
+        for (let i = 0; i < muchang.length; i++) {
+            muchang[i].addEventListener("click",function () {
+                for (let j = 0; j < muchang.length; j++) {
+                    muchang[j].style="border:none;color: black";
+                }
+                muchang[i].style="border-bottom: 2px solid red; color: #f63f2e"
+            })
+            
+        }
+        var like =document.querySelectorAll(".home_product_item_like");
+        for (let hi of like) {
+            edit=true;
+            hi.addEventListener("click",function name(params) {
+                if(edit)
+                {
+                    hi.classList.add("liked")
+                    edit=false;
+                }
+                else
+                {
+                    hi.classList.remove("liked")
+                    edit=true;
+                }
+            })
+        }
+        var logout =document.querySelectorAll(".information_link");
+        for (let i = 0; i < logout.length; i++) {
+            logout[i].onclick=function ()
+            {
+                if(logout[i].textContent =="Đăng xuất")
+                {
+                    document.querySelector(".nav__khachhang").classList.remove("logged");
+                    document.querySelector(".shopping_icon ").classList.remove("has_cart");
+                }
+            }   
+        }
+        var out=document.querySelector(".menulogin_link");
+        out.onclick=function(){
+            out.style.display="block";
+        }
+    </script>
+</body>               
